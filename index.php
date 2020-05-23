@@ -28,7 +28,7 @@
 	<link rel="icon" href="images/logo.png" sizes="192x192" />
 	<link rel="apple-touch-icon" href="images/logo.png" />
     <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Tangerine">
+  href="https://fonts.googleapis.com/css?family=Roboto">
 
     <style>
 
@@ -53,7 +53,7 @@
                 Kartu Idul Fitri <b>Solidaritas Insan Peduli</b>
             </div>
             <hr />
-            <canvas width="1280" height="1280" id="myCanvas"></canvas>
+            <canvas width="1500" height="1500" id="myCanvas"></canvas>
             <br />
             <input type="text" id="txt" placeholder="Tuliskan Nama Anda disini, dan Klik Tampilkan" class="form-control" style="font-size:14px; text-align:left;  " />
 
@@ -102,15 +102,15 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold"+ fontsize + "px Arial";
-                context.fillStyle = "#FFD700";
+                context.font = "bold"+ fontsize + "px arial";
+                context.fillStyle = "#FBEFA1";
                 context.textAlign = "center";
-                context.fillText(res, 640, 590);
+                context.fillText(res, 750, 700);
 
                 
 
             };
-            imageObj.src = "images/sip.png";
+            imageObj.src = "images/kurnia 2.jpg";
         }
 
         window.onload = function () {
@@ -120,16 +120,16 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 50px Arial";
-                context.fillStyle = "#FFD700";
+                context.font = "bold 70px arial";
+                context.fillStyle = "#FBEFA1";
                 context.textAlign = "center";
-                context.fillText("Abu Hasna", 640, 590);
+                context.fillText("Kurnia Abu Hasna - Verifikator Depok", 750, 700);
 
 
                 
 
             };
-            imageObj.src = "images/sip.png";
+            imageObj.src = "images/kurnia 2.jpg";
         };
 
 
