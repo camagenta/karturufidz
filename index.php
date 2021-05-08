@@ -7,31 +7,22 @@
 
     <title>SIP Fitri Card by Abu Hasna</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta property="og:image" content="images/logo.png">
-	<meta name="twitter:image" content="images/logo.png">
-
     <meta charset="utf-8" />
-    
-
-    
-	<script src="js/canvas2image.js"></script>
+    <script src="js/canvas2image.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/custom.css" rel="stylesheet" />
     <link href="css/OverrideCss.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/fonts.css" rel="stylesheet" />
-
-	<link rel="icon" href="images/logo.png" sizes="32x32" />
-	<link rel="icon" href="images/logo.png" sizes="192x192" />
-	<link rel="apple-touch-icon" href="images/logo.png" />
+    <link rel="icon" href="images/logo.jpeg" sizes="32x32" />
+    <link rel="icon" href="images/logo.jpeg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="images/logo.jpeg" />
     <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto">
 
     <style>
-
         .doc {
             width:100%;
             margin: 0 auto;
@@ -53,7 +44,7 @@
                 Kartu Idul Fitri <b>Solidaritas Insan Peduli</b>
             </div>
             <hr />
-            <canvas width="1500" height="1500" id="myCanvas"></canvas>
+            <canvas width="1280" height="1280" id="myCanvas"></canvas>
             <br />
             <input type="text" id="txt" placeholder="Tuliskan Nama Anda disini, dan Klik Tampilkan" class="form-control" style="font-size:14px; text-align:left;  " />
 
@@ -78,7 +69,7 @@
         {
             var canvas = document.getElementById("myCanvas"); 
             var img = canvas.toDataURL("image/png");
-            document.write('<img src="' + img + '"/>');
+            document.write('<img src="' + img + '.png"/>');
         }
 
         function showImg() {
@@ -92,10 +83,10 @@
             var canvas = document.getElementById("myCanvas");
             var context = canvas.getContext("2d");
             context.clearRect(0, 0, 3000, 2000);
-            var fontsize = 80;
+            var fontsize = 50;
 
             if (name.length > 20) {
-                fontsize = 80 - (name.length - 20);
+                fontsize = 70 - (name.length - 30);
             }
             //alert(name.length);
             var imageObj = new Image();
@@ -103,14 +94,11 @@
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
                 context.font = "bold"+ fontsize + "px arial";
-                context.fillStyle = "#FBEFA1";
+                context.fillStyle = "#73B141";
                 context.textAlign = "center";
-                context.fillText(res, 750, 700);
-
-                
-
+                context.fillText(res, 650, 325);
             };
-            imageObj.src = "images/kurnia 2.jpg";
+            imageObj.src = "images/1442H.jpeg";
         }
 
         window.onload = function () {
@@ -120,16 +108,12 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 70px arial";
-                context.fillStyle = "#FBEFA1";
+                context.font = "bold 70px Sans";
+                context.fillStyle = "#2B6430";
                 context.textAlign = "center";
-                context.fillText("Kurnia Abu Hasna - Verifikator Depok", 750, 700);
-
-
-                
-
+                context.fillText("KURNIA ABU HASNA", 650, 325);
             };
-            imageObj.src = "images/kurnia 2.jpg";
+            imageObj.src = "images/1442H.jpeg";
         };
 
 
