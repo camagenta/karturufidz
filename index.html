@@ -86,7 +86,7 @@
             var fontsize = 50;
 
             if (name.length > 20) {
-                fontsize = 70 - (name.length - 30);
+                fontsize = 60 - (name.length - 30);
             }
             //alert(name.length);
             var imageObj = new Image();
@@ -96,9 +96,9 @@
                 context.font = "bold"+ fontsize + "px arial";
                 context.fillStyle = "#73B141";
                 context.textAlign = "center";
-                context.fillText(res, 650, 325);
+                context.fillText(res, 650, 275);
             };
-            imageObj.src = "images/1442H.jpeg";
+            imageObj.src = "images/1442Hb.jpeg";
         }
 
         window.onload = function () {
@@ -108,12 +108,12 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 70px Sans";
+                context.font = "bold 60px Sans";
                 context.fillStyle = "#2B6430";
                 context.textAlign = "center";
-                context.fillText("KURNIA ABU HASNA", 650, 325);
+                context.fillText("Segenap Keluarga Besar SIP", 650, 275);
             };
-            imageObj.src = "images/1442H.jpeg";
+            imageObj.src = "images/1442Hb.jpeg";
         };
 
 
