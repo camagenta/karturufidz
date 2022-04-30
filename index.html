@@ -48,7 +48,8 @@
             <form class="form-inline">
             <input type="text" id="txt" placeholder="Tuliskan Nama Anda disini, dan Klik Tampilkan" class="form-control" style="font-size:14px; text-align:left; width: 70%;  " />
             <input type="button" id="btn" value="Tampilkan" onclick="showImg()" class="btn btn-danger" style="font-size:18px; text-align:right;  " />
-			<input type="button" id="save" value="Simpan" onclick="saveImg()" class="btn btn-primary hidden" style="font-size:18px; text-align:right;" />
+			<!-- <input type="button" id="save" value="Simpan" onclick="saveImg()" class="btn btn-primary hidden" style="font-size:18px; text-align:right;" /> -->
+            <input type="button" id="save" value="Simpan" onclick="saveImg()" class="btn btn-primary hidden" style="font-size:18px; text-align:right;" />
             </form>
             <br /><br />
             <canvas width="1000" height="1000" id="myCanvas"></canvas>
@@ -75,6 +76,14 @@
             link.href = URL.createObjectURL(blob);
             link.click();
         },'image/png');
+        }
+
+        function simpanImg()
+        {
+            var canvas = document.getElementById("myCanvas"); 
+            var img = canvas.toDataURL("image/png");
+            document.write('<img src="' + img + '"/>');
+           
         }
 
         function showImg() {
@@ -134,5 +143,14 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-86L3D990R6"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-86L3D990R6');
+    </script>
  </body>
 </html>
