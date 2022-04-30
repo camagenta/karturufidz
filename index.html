@@ -71,7 +71,7 @@
         var canvas = document.getElementById("myCanvas");
         canvas.toBlob(function(blob) {
             var link = document.createElement("a");
-            link.download = "sipcard1442.png";
+            link.download = "sipcard1443.png";
             link.href = URL.createObjectURL(blob);
             link.click();
         },'image/png');
@@ -99,14 +99,14 @@
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
                 context.font = "bold"+ fontsize + "px arial";
-                context.fillStyle = "#2B6430";
+                context.fillStyle = "#ffca5a";
                 context.textAlign = "center";
-                context.fillText(res, 500, 215);
+                context.fillText(res, 500, 315);
 
                 
 
             };
-            imageObj.src = "images/1442H.jpeg";
+            imageObj.src = "images/sip1443.jpeg";
         }
 
         window.onload = function () {
@@ -117,15 +117,15 @@
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
                 context.font = "bold 30px arial";
-                context.fillStyle = "#2B6430";
+                context.fillStyle = "#e4b54a";
                 context.textAlign = "center";
-                context.fillText("Segenap Keluarga Besar SIP", 500, 215);
+                context.fillText("Segenap Keluarga Besar SIP", 500, 315);
 
 
                 
 
             };
-            imageObj.src = "images/1442H.jpeg";
+            imageObj.src = "images/sip1443.jpeg";
         };
 
 
