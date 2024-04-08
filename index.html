@@ -5,7 +5,7 @@
 
 <head>
 
-    <title>SIP Fitri Card by Abu Hasna</title>
+    <title>The Rufidz Indonesia - Rumah Tahfidz Islamic Character Building</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
 	<script src="js/canvas2image.js"></script>
@@ -17,8 +17,8 @@
     <link href="css/style.css" rel="stylesheet" />
     <!-- <link href="css/fonts.css" rel="stylesheet" /> -->
 
-	<link rel="icon" href="images/logo.jpeg" sizes="32x32" />
-	<link rel="icon" href="images/logo.jpeg" sizes="192x192" />
+	<link rel="icon" href="images/logo.png" sizes="32x32" />
+	<link rel="icon" href="images/logo.png" sizes="192x192" />
 	<!-- <link rel="apple-touch-icon" href="images/logo.png" /> -->
     <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Roboto">
@@ -42,7 +42,7 @@
         <div class="doc" style="padding-top:0%; ">
 			<br />
             <div style="text-align:center; font-weight:100;font-size:20px;">
-                Kartu Idul Fitri <b>Solidaritas Insan Peduli</b>
+                Kartu Idul Fitri <b>The Rufidz Indonesia</b>
             </div>
             <hr />
             <form class="form-inline">
@@ -52,13 +52,13 @@
             <input type="button" id="save" value="Simpan" onclick="saveImg()" class="btn btn-primary hidden" style="font-size:18px; text-align:right;" />
             </form>
             <br /><br />
-            <canvas width="1000" height="1000" id="myCanvas"></canvas>
+            <canvas width="1123" height="1123" id="myCanvas"></canvas>
             
             <hr />
 			
 			<div class="alert alert-info">
                 <ul dir="ltr" style="list-style-type: none; padding-left:0%;">
-                    <li><span class="fa fa-desktop" style="padding-left:5px;"></span> &nbsp Jika ada kendala bisa bertanya di group Persaudaraan SIP atau Japri <a href="http://t.me/camagenta"><b>Abu Hasna</b></a></li>
+                    <li><span class="fa fa-desktop" style="padding-left:5px;"></span> &nbsp Jika ada kendala bisa bertanya ke <a href="http://s.id/omkuro"><b>Abu Hasna</b></a> powered by <a href="http://s.id/kurolink"><b>Om Kuro</b></a> </li>
                     <!-- <li><span class="fa fa-mobile-phone fa-2x" style="padding-left:7px;"></span>  &nbsp Untuk menyimpan gambar dari ponsel, klik pada gambar selama dua detik dan pilih <b>Simpan Gambar</b> </li> -->
 
                 </ul>
@@ -72,7 +72,8 @@
         var canvas = document.getElementById("myCanvas");
         canvas.toBlob(function(blob) {
             var link = document.createElement("a");
-            link.download = "sipcard1443.png";
+            link.download = "1445H.png";
+            link.crossOrigin="anonymous"
             link.href = URL.createObjectURL(blob);
             link.click();
         },'image/png');
@@ -82,6 +83,7 @@
         {
             var canvas = document.getElementById("myCanvas"); 
             var img = canvas.toDataURL("image/png");
+            img.setAttribute('crossorigin', 'anonymous'); 
             document.write('<img src="' + img + '"/>');
            
         }
@@ -96,7 +98,7 @@
 			var res = str1.concat(name, str2);
             var canvas = document.getElementById("myCanvas");
             var context = canvas.getContext("2d");
-            context.clearRect(0, 0, 3000, 2000);
+            context.clearRect(0, 0, 1123, 1123);
             var fontsize = 30;
 
             if (name.length > 20) {
@@ -108,14 +110,14 @@
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
                 context.font = "bold"+ fontsize + "px arial";
-                context.fillStyle = "#ffca5a";
+                context.fillStyle = "#000";
                 context.textAlign = "center";
-                context.fillText(res, 500, 315);
+                context.fillText(res, 560, 955);
 
                 
 
             };
-            imageObj.src = "images/sip1443.jpeg";
+            imageObj.src = "images/1445H.png";
         }
 
         window.onload = function () {
@@ -126,15 +128,15 @@
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
                 context.font = "bold 30px arial";
-                context.fillStyle = "#e4b54a";
+                context.fillStyle = "#000";
                 context.textAlign = "center";
-                context.fillText("Segenap Keluarga Besar SIP", 500, 315);
+                context.fillText("Segenap Keluarga Besar The Rufidz", 560, 955);
 
 
                 
 
             };
-            imageObj.src = "images/sip1443.jpeg";
+            imageObj.src = "images/1445H.png";
         };
 
 
